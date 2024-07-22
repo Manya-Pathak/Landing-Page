@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: url('image.jpg');
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            color: White;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .logo {
+            margin-left: 20px;
+        }
+
+        .logo img {
+            height: 80px;
+            float: left;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .menu a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid white;
+            transform: 0.4s linear;
+        }
+
+        .menu a:hover:before {
+            width: 90%;
+        }
+
+        .hire a {
+            text-decoration: none;
+            color: rgb(8, 8, 8);
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-left: 200px;
+            background: White;
+            border-radius: 20px;
+        }
+
+        .h-txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .h-txt span {
+            letter-spacing: 5px;
+        }
+
+        .h-txt h1 {
+            font-size: 3.1em;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            background: white;
+            color: black;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="https://croitre.site/contact/" target="_blank">Portfolio</a>
+                <a href="https://www.linkedin.com/in/manya-pathak" target="_blank">LinkedIn</a>
+                <a href="page2.html">Contact Info</a>
+            </div>
+            <div class="hire">
+                <a href="#">Hire Me</a>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <span>Design & Grow</span>
+            <h1>Igniting Brands with Strategic Creativity</h1>
+            <br>
+            <a href="https://croitre.site/" target="_blank">Let's Create Project Together</a>
+        </section>
+    </header>
+</body>
+
+</html>
